@@ -39,6 +39,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependencies\Assembly-CSharp-Publicized.dll</HintPath>
     </Reference>
+    <Reference Include="CommandSystem.Core">
+      <HintPath>Dependencies\CommandSystem.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Exiled.API, Version=6.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependencies\Exiled.API.dll</HintPath>
@@ -50,6 +53,12 @@
     <Reference Include="Exiled.Loader, Version=6.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependencies\Exiled.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror">
+      <HintPath>Dependencies\Mirror.dll</HintPath>
+    </Reference>
+    <Reference Include="PluginAPI">
+      <HintPath>Dependencies\PluginAPI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -63,9 +72,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependencies\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>Dependencies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
+    <Compile Include="EventHandlers.cs" />
+    <Compile Include="Subclass.cs" />
     <Compile Include="Subclasses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

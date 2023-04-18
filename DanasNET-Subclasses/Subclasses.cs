@@ -14,8 +14,6 @@ namespace DanasNET_Subclasses
         public override string Name => "DanasNET-Subclasses";
         public override Version RequiredExiledVersion => new Version(6, 0, 0);
 
-        public Subclasses Singleton => Singleton;
-
         public override void OnEnabled()
         {
 
