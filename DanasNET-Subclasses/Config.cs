@@ -29,8 +29,8 @@ namespace DanasNET_Subclasses
                         ItemType.Coin
                     },
                     Chance = 15,
-                    MaxPlayerCount = 4,
-                    MainRole = PlayerRoles.RoleTypeId.ClassD
+                    MaxPlayerCount = 2,
+                    MainRole = RoleTypeId.ClassD
                 }
             },
             {
@@ -42,8 +42,8 @@ namespace DanasNET_Subclasses
                         ItemType.Flashlight
                     },
                     Chance = 15,
-                    MaxPlayerCount = 4,
-                    MainRole = PlayerRoles.RoleTypeId.ClassD
+                    MaxPlayerCount = 2,
+                    MainRole = RoleTypeId.ClassD
                 }
             },
             {
@@ -77,7 +77,7 @@ namespace DanasNET_Subclasses
                                     30
                                 }
                             },
-                            Chance = 20,
+                            Chance = 10,
                             MaxPlayerCount = 1,
                             MainRole = RoleTypeId.ChaosConscript
                         }
@@ -93,11 +93,33 @@ namespace DanasNET_Subclasses
                         Name = "Zone Manager",
                         StartingInventory = new List<ItemType>
                         {
-                            ItemType.KeycardZoneManager
+                            ItemType.KeycardZoneManager,
+                            ItemType.Flashlight
                         },
                         Chance = 30,
                         MaxPlayerCount = 1,
                         MainRole = RoleTypeId.Scientist
+                    }
+                }
+            },
+            {
+                RoleTypeId.FacilityGuard,
+                new List<Subclass>
+                {
+                    new Subclass
+                    {
+                        Name = "Security Head",
+                        StartingInventory = new List<ItemType>
+                        {
+                            ItemType.Jailbird,
+                            ItemType.ArmorLight,
+                            ItemType.Radio,
+                            ItemType.KeycardGuard,
+                            ItemType.Medkit
+                        },
+                        Chance = 100,
+                        MaxPlayerCount = 1,
+                        MainRole = RoleTypeId.FacilityGuard
                     }
                 }
             }

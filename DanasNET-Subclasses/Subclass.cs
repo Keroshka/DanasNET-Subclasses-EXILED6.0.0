@@ -35,7 +35,6 @@ namespace DanasNET_Subclasses
             }
             if (MaxPlayerCount > 0)
             {
-                MaxPlayerCount--;
                 return true;
             }
             return false;
